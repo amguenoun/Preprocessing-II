@@ -1,10 +1,14 @@
 nav{
     .flex(row, space-between, center);
-    margin-top:4%;
-    padding-bottom:4%;
+    margin-top:2%;
+    padding-bottom:2%;
     border-bottom:3px dashed @silver;
     div{
         width:50%;
+
+        h1{
+            margin-left:4%;
+        }
     }
 
     .links{
@@ -30,7 +34,17 @@ nav{
             h1{
                 text-align:center;
                 margin-bottom:2%;
+                margin-left:0%;
             }
         }
     }
 }
+
+.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    margin:auto;
+    width:100%;
+    background:@sandy-beach;
+  }
