@@ -346,3 +346,69 @@ nav .links a:hover {
     width: 100%;
   }
 }
+.home .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 100%;
+  border-top: 3px dashed #C0C0C0;
+  padding-top: 2%;
+}
+.home .contact select,
+.home .contact button {
+  margin: 2% 0%;
+}
+.home .contact .text-label {
+  margin-top: 2%;
+}
+.home .contact .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+.home .contact .input-container label,
+.home .contact .input-container input {
+  width: 100%;
+  margin: 1% 0%;
+}
+.home .contact button {
+  background: #17A2B8;
+  color: white;
+  text-align: center;
+  padding: 4% 0%;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #17A2B8;
+  width: 20%;
+  padding: 1% 0%;
+}
+.home .contact button:hover {
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background: #17A2B8;
+    color: white;
+  }
+  50% {
+    background: white;
+    color: #17A2B8;
+    border: 1px solid #17A2B8;
+  }
+  100% {
+    background: #17A2B8;
+    color: white;
+  }
+}
+@media (max-width:500px) {
+  .home .contact .input-container {
+    flex-direction: column;
+  }
+}

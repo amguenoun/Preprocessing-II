@@ -104,4 +104,45 @@
       }
     }
   }
+
+  .contact{
+    .flex(column,center,center);
+    font-size:1.6rem;
+    width:100%;
+    border-top: 3px dashed @silver;
+    padding-top:2%;
+
+    select, button{
+      margin:2% 0%;
+    }
+
+    .text-label{
+      margin-top:2%;
+    }
+    
+    .input-container{
+      .flex(row, flex-start, center);
+      width:40%;
+
+      label, input{
+        width:100%;
+        margin:1% 0%;
+      }
+    }
+
+    button{
+      .buttonMake(@eastern-blue, white);
+      width:20%;
+      padding:1% 0%;
+        &:hover{
+          .colorFlip(@eastern-blue, white);
+        }
+    }
+
+    @media @mobile{
+      .input-container{
+        flex-direction:column;
+      }
+    }
+  }
 }// home
