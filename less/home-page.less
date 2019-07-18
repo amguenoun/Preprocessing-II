@@ -88,7 +88,11 @@
       margin-bottom: 30px;
 
       .btn{
-        .buttonMake(@eastern-blue, white)
+        .buttonMake(@eastern-blue, white);
+
+        &:hover{
+          .colorFlip(@eastern-blue, white);
+        }
       }
     }
 
