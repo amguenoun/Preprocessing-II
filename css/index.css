@@ -173,8 +173,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2%;
-  padding-bottom: 2%;
+  margin-top: 1%;
+  padding-bottom: 1%;
   border-bottom: 3px dashed #C0C0C0;
 }
 nav div {
@@ -252,7 +252,7 @@ nav .links a:hover {
 }
 .home header {
   border-bottom: 3px dashed #C0C0C0;
-  margin-top: 9.3%;
+  margin-top: 7.6%;
 }
 .home header h2 {
   margin-top: 2%;
@@ -262,7 +262,7 @@ nav .links a:hover {
 }
 @media (max-width:500px) {
   .home header {
-    margin-top: 18%;
+    margin-top: 15%;
   }
 }
 .home .content-section {

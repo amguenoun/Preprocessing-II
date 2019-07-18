@@ -1,12 +1,12 @@
 // Mixins in here
-.flex(@direction, @justify, @align){
+.flex(@direction:row, @justify:center, @align:center){
     display:flex;
     flex-direction:@direction;
     justify-content:@justify;
     align-items:@align;
 }
 
-.buttonMake(@bgColor, @fontColor){
+.buttonMake(@bgColor:black, @fontColor:white){
     background:@bgColor;
     color:@fontColor;
     text-align:center;
@@ -18,7 +18,7 @@
 }
 
 
-.pulseAni(@duration, @iteration){
+.pulseAni(@duration:1s, @iteration:infinite){
     animation-name:pulse;
     animation-duration:@duration;
     animation-iteration-count: @iteration;
