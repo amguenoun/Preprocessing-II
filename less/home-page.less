@@ -1,7 +1,11 @@
 .home {
 
+  header, section{
+    width:90%;
+    margin:0 auto;
+  }
+
   header{
-    border-top:3px dashed @silver;
     border-bottom:3px dashed @silver;
 
     h2{
@@ -14,7 +18,7 @@
   }
 
   .content-section {
-    margin: 30px 0;
+    margin-top:2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -34,6 +38,15 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile{
+      flex-direction:column;
+      margin-top:4%;
+      
+      .text-content, .img-content{
+        width:100%;
+      }
+    }
   }
 
   .inverse-content {
@@ -49,11 +62,15 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile{
+      flex-direction:column-reverse;
+    }
   }
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 2% auto 30px;
 
     img {
       border-radius: 10px;
@@ -72,6 +89,14 @@
 
       .btn{
         .buttonMake(@eastern-blue, white)
+      }
+    }
+
+    @media @mobile{
+      flex-direction:column;
+
+      .destination{
+        width:100%;
       }
     }
   }
