@@ -167,6 +167,10 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background: #FFEBCD;
+}
+body {
+  background: #8567ff;
 }
 nav {
   display: flex;
@@ -180,8 +184,12 @@ nav {
 nav div {
   width: 50%;
 }
-nav div h1 {
+nav div a {
+  text-decoration: none;
+}
+nav div a h1 {
   margin-left: 4%;
+  color: black;
 }
 nav .links {
   display: flex;
