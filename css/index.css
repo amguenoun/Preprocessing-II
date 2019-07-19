@@ -169,6 +169,11 @@ img {
   margin: 0 auto;
   background: #FFEBCD;
 }
+@media (max-width:500px) {
+  .container {
+    background: #8567ff;
+  }
+}
 body {
   background: #8567ff;
 }
