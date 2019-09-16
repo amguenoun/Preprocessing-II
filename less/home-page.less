@@ -1,7 +1,28 @@
 .home {
 
+  header, section{
+    width:90%;
+    margin:0 auto;
+  }
+
+  header{
+    border-bottom:3px dashed @silver;
+    margin-top:7.6%;
+    h2{
+      margin-top:2%;
+    }
+
+    p{
+      margin-bottom:2%;
+    }
+
+    @media @mobile{
+      margin-top: 15%;
+    }
+  }
+
   .content-section {
-    margin: 30px 0;
+    margin-top:2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,6 +42,15 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile{
+      flex-direction:column;
+      margin-top:4%;
+      
+      .text-content, .img-content{
+        width:100%;
+      }
+    }
   }
 
   .inverse-content {
@@ -36,11 +66,15 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile{
+      flex-direction:column-reverse;
+    }
   }
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 2% auto 30px;
 
     img {
       border-radius: 10px;
@@ -56,6 +90,64 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .buttonMake(@eastern-blue, white);
+
+        &:hover{
+          .colorFlip(@eastern-blue, white);
+        }
+      }
+    }
+
+    @media @mobile{
+      flex-direction:column;
+
+      .destination{
+        width:100%;
+      }
+    }
+  }
+
+  .contact{
+    .flex(column,center,center);
+    font-size:1.6rem;
+    width:100%;
+    border-top: 3px dashed @silver;
+    padding-top:2%;
+
+    select, button{
+      margin:2% 0%;
+    }
+
+    .text-label{
+      margin-top:2%;
+    }
+    
+    .input-container{
+      .flex(row, flex-start, center);
+      width:40%;
+
+      label, input{
+        width:100%;
+        margin:1% 0%;
+      }
+    }
+
+    button{
+      .buttonMake(@eastern-blue, white);
+      width:20%;
+      padding:1% 0%;
+        &:hover{
+          .colorFlip(@eastern-blue, white);
+        }
+    }
+
+    @media @mobile{
+      .input-container{
+        flex-direction:column;
+      }
     }
   }
 }// home
+

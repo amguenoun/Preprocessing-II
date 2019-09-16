@@ -1,1 +1,59 @@
 // Mixins in here
+.flex(@direction:row, @justify:center, @align:center){
+    display:flex;
+    flex-direction:@direction;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.buttonMake(@bgColor:black, @fontColor:white){
+    background:@bgColor;
+    color:@fontColor;
+    text-align:center;
+    padding:4% 0%;
+    font-size:1.6rem;
+    border-radius:10px;
+    cursor:pointer;
+    border:1px solid @bgColor;
+}
+
+
+.pulseAni(@duration:1s, @iteration:infinite){
+    animation-name:pulse;
+    animation-duration:@duration;
+    animation-iteration-count: @iteration;
+
+    @keyframes pulse{
+        0%{
+            font-size:100%;
+        }
+        50%{
+            font-size:200%;
+        }
+        100%{
+            font-size:100%;
+        }
+    }
+}
+
+.colorFlip(@bgColor, @fontColor){
+    animation-name:colorChange;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+
+    @keyframes colorChange{
+        0%{
+            background:@bgColor;
+            color:@fontColor;
+        }
+        50%{
+            background:@fontColor;
+            color:@bgColor;
+            border:1px solid @bgColor;
+        }
+        100%{
+            background:@bgColor;
+            color:@fontColor;
+        }
+    }
+}
